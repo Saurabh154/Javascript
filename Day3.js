@@ -75,7 +75,7 @@ console.log(totalSalary);
 totalSalary %= 100;
 console.log(totalSalary);
 
-
+ 
 /* UNARY OPERATOR */
 console.log();
 console.log("UNARY OPERATOR");
@@ -121,6 +121,41 @@ x = ++x; //31
 console.log(x); //31
 
 // final o/p : 13 28 29 30 31
+
+/* RELATIONAL OPERATOR */
+
+console.log("---------------");
+console.log("RELATIONAL OPERATOR");
+console.log();
+
+var x = 143;
+var y = 45;
+
+console.log(x<y); // false
+console.log(x>y); // true
+console.log(x>=y); // true
+console.log(x<=y); // false
+console.log(x==y); // false (check only content)
+console.log(x===y); // false (check content as well as data types)
+console.log(x!==y); // false -> true
+
+
+let p = 10; // number
+let q = 10 // number
+
+console.log(p === q); // 1. content 2. number true
+
+console.log("--------------");
+
+var x = "10";
+var y = 10;
+console.log(x==y); // type cohersion is happened
+console.log(x===y); // type cohersion is not happened
+
+
+
+
+
 
 
 
