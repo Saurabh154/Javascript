@@ -38,30 +38,40 @@ console.log("TypeCasting");
 // Type conversion (by programmer)
 let n = 10;
 console.log(n, typeof n); //10, number 
+
 n = Number("123");
 console.log(n, typeof n); //123, number
-n = Number("jsp");
+
+n = Number("jsp"); 
 console.log(n, typeof n); //NaN, number
+
 n = Number(true);
 console.log(n, typeof n); //1, number
+
 n = Number(false);
 console.log(n, typeof n); //0, number
+
 n = Number(undefined)
 console.log(n, typeof n); //NaN, number
+
 n = Number(null)
-console.log(n, typeof n);
+console.log(n, typeof n); //0, number
+
 console.log();
 
 //Type cohersion (imlicitly)
 console.log("Type Cohersion");
 console.log();
 
-console.log(10 * "10"); // 100
+console.log(10 * "10"); // 100 "10"->implicitly converted to number
 console.log(10 * true); // 10
 console.log(10 * undefined); // NaN
 console.log("2" * "2"); // 4
 console.log(10 * null); // 0
 console.log("gopal" * "krishna"); // NaN
+console.log("k"*"2"); // NaN
+
+
 
 
 
