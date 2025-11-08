@@ -302,7 +302,7 @@ console.log(x===y); // type cohersion is not happened
 |OPERATION|OPERATOR|
 |:---------:|:--------:|
 |AND | &&|
-|OR |  |
+|OR | or symbol |
 |NOT | !|
 
 ```js
@@ -355,6 +355,11 @@ var c = 30;
 var res = (a>b && a>c )  ? `${a} is greatest` : (b>c && b>a) ? `${b} is greatest` : `${c} is greatest`;
 console.log(res);
 
+// IInd Approach 
+var res = a>b ? a : b;
+res = res>c : res ? c;
+console.log(res);
+
 // WAP TO FIND GREATEST OF TWO NUMBER BY USING TERNARY OPERATOR
 
 var a = 20;
@@ -363,3 +368,102 @@ var b = 30;
 var res = (a>b) ? `${a} is greatest` : `${b} is greatest`;
 console.log(res);
 ```
+
+
+>##### <ins>CONDITIONAL STATEMENTS OR DECISION MAKING STATEMENTS </ins>
+
+Conditional stmt are use it to skip the block of code based on the condition.
+
+There are 4 types of conditional statement
+* if 
+  * always requires a condition to execute 
+  * always a true or false value (boolean)
+  ```js
+  // syntax 
+  if(conditon)
+  {
+    // statements 
+  }
+
+  var n=6;
+  if(n%2==0){
+    console.log(`${num} divisible by 2`);
+  }
+    
+    
+
+  ```
+* if-else
+    * if condition is true `if` block will executed.
+    * otherwise `else` block will executed
+    ```js
+    if(10){
+        console.log("If block executed!!");
+    }else{
+        colsole.log("Else block executed!!");
+    }
+
+    o/p : If block executed!!
+    ```
+    ```java
+    class A{
+        public static void main(String [] args){
+            if(10){
+                Sopln("If block executed!!");
+            }else{
+                Sopln("else block executed!!");
+            }
+        }
+    }
+    
+    o/p : compile-time error
+    ```
+
+    ```js
+    // WAP TO CHECK THE YEAR IS LEAP YEAR OR NOT
+    var year = parseInt(prompt("Enter a year!!"));
+    if(year % 400 == 0){
+        console.log(`${year} is leap year`);
+    }else if(year % 4 == 0 && year % 100 != 0){
+        console.log(`${year} is leap year`);
+    }else{
+        console.log(`${year} not a leap year`);
+    }
+    ```
+
+    ```js
+    // WAP TO CHECK A GIVEN CHARACTER IS VOWEL OR CONSONANT
+    var ch = String(prompt("Enter a charcter!!"));
+    if(ch == 'a' || ch == 'e' || ch == 'i' ||ch == 'o' ||ch == 'u' ||
+        ch == 'A' || ch == 'E' || ch == 'I' ||ch == 'O' ||ch == 'U'
+    ){
+        console.log(`${ch} is vowel`);
+    }else{
+        console.log(`${ch} is consonant`);
+    }
+    ```
+* else-if
+  ```js
+  if(condition){
+
+  }else if(condition){
+
+  }else if(condition){
+
+  }else{
+
+  }
+  ```
+
+  ```js
+  let num = parseInt(prompt("Enter a number"));
+  if(num == 0){
+    console.log(`${num} is neither -ve or +ve`);
+  }else if(num > 0){
+    console.log(`${num} is positive`);
+  }else{
+    console.log(`${num} is negative`);
+  }
+  ```
+* switch
+  
