@@ -467,3 +467,70 @@ There are 4 types of conditional statement
   ```
 * switch
   
+  ```js
+  let m =+ prompt("Enter Amount");
+
+    switch (m) {
+        case 50:
+            console.log("Enjoy with Juice🥤");            
+            break;
+
+        case 500:
+            console.log("Enjoy with Burger 🍔");
+            break;
+    
+        case 1000:
+            console.log("Enjoy with Burger🍔 And Juice🥤");
+            break;
+            
+        default:
+            console.log("Valid Input");    
+    }
+  ```
+  
+>##### <ins>LOOPING STATEMENTS </ins>
+
+* for-loop
+   
+   ```js
+    for(let i=0; i<3; (i++/++i/i+=1/i=i+1)){
+        console.log("Happy Coding...😀");
+    }
+    console.log("After Loop");
+   ```
+
+   ```js
+    let str="";
+    for(let i=1; i<=10; i++){
+        if(i<=9)str = str + i + ",";
+        else str = str + i;
+    }
+    console.log(str);  
+    o/p :  1,2,3,4,5,6,7,8,9,10
+   ```
+
+>**break, continue, return**
+
+<ins>break statement:
+* break is a control flow stmt which is used to terminate the execution of the loop.
+* This stmt can be used within `switch`.
+
+<ins>continue statement:
+* continue is a flow statement which is only used 
+  within looping stmt to skip the current iteration and proceed to next stmt.
+* whenever continue stmt is executed the remaining of   the current stmt will be skipped.
+
+<ins>return statement:
+* return stmt is used to terminate current methods/function.
+  
+```js
+for(let i=1; i<=10; i++){
+    if(i%2 === 0){
+        // break
+        // continue
+        // return
+    }
+    console.log(i);    
+}
+
+```
